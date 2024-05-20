@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import 'animate.css';
 import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
@@ -9,6 +9,11 @@ import video from './assets/videos/cosmos.mp4';
 import video_2 from './assets/videos/cosmos_2.mp4';
 import audio from './assets/audio/greetings.mp3';
 function App() {
+  useEffect(() => {
+    window.onload = function () {
+      let context = new AudioContext();
+    };
+  }, []);
   return (
     <body className="min-h-screen">
       <video
@@ -25,7 +30,10 @@ function App() {
           objectFit: 'cover',
         }}
       ></video>
-      <audio id="audio" loop autoplay="true">
+      {/* <audio id="audio" loop autoplay="true">
+        <source src={audio} type="audio/mpeg" />
+      </audio> */}
+      <audio id="audio" autoplay="true">
         <source src={audio} type="audio/mpeg" />
       </audio>
       <LandingPage></LandingPage>

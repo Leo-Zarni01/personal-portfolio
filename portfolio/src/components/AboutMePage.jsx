@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import profile from '../assets/images/leo_avatar.png';
 import { useIsVisible } from '../hooks/useIsVisible';
+import CurvedText from './CurvedText';
+import ReactCurvedText from 'react-curved-text';
 
 const AboutMePage = () => {
   const ref1 = useRef(null);
@@ -11,11 +13,30 @@ const AboutMePage = () => {
       className="flex flex-row justify-center items-center gap-10 h-0"
       style={{ position: 'relative', top: -600 }}
     >
-      <div className="flex flex-col justify-center items-center">
+      <div className="relative flex flex-col justify-center items-center">
+        <div className="absolute top-0 left-0 animate-spin [animation-duration:_3s]">
+          {/* <CurvedText /> */}
+          <ReactCurvedText
+            width="400"
+            height="400"
+            cx="224"
+            cy="224"
+            rx="224"
+            ry="224"
+            startOffset="10"
+            reversed={true}
+            text="About me"
+            textProps={{ style: { fontSize: '26' } }}
+            textPathProps={{ fill: '#854c4c' }}
+            tspanProps={null}
+            ellipseProps={null}
+            svgProps={{ className: 'rotating-curved-text' }}
+          />
+        </div>
         {/* {currentJsx} */}
-        <h1 className="text-center py-8 text-slightly-desaturated-magenta text-xl">
+        {/* <h1 className="text-center py-8 text-slightly-desaturated-magenta text-xl">
           About Me
-        </h1>
+        </h1> */}
         <img
           className={`${
             isVisible1 &&

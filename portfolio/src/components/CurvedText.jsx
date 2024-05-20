@@ -12,6 +12,7 @@ const CurvedText = () => {
       reversed={false}
       text="react-curved-text"
       textProps={{ style: { fontSize: 24 } }}
+      svgProps={{ className: 'rotating-curved-text' }}
     />
   );
 };
