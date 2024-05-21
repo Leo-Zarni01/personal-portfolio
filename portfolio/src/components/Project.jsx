@@ -26,7 +26,7 @@ const Project = (props) => {
       }}
     >
       <a
-        className="project-link w-72 animate__animated animate__fadeInLeft animate__delay-1s"
+        className="project-link size-72 animate__animated animate__fadeInLeft animate__delay-1s"
         href={link}
         target="_blank"
         rel="noopener noreferrer"
@@ -45,7 +45,7 @@ const Project = (props) => {
         }}
       >
         <img
-          className="project-image"
+          className="project-image size-[18rem]"
           style={{
             transform: 'scale(1.2)',
             filter: 'saturate(0)',
@@ -57,16 +57,15 @@ const Project = (props) => {
       </a>
       <div
         className="project-details animate__animated animate__fadeInUp animate__delay-2s"
-        style={{ margin: 'auto', position: 'relative', left: -100, top: -100 }}
+        style={{ margin: 'auto', position: 'relative', left: -100, top: -50 }}
       >
         <div
           className="project-tile"
           style={{
             fontSize: '2rem',
-            textTransform: 'uppercase',
             fontWeight: 'bold',
             marginBottom: 0,
-            color: '#f300b4',
+            color: '#f9f9f9',
           }}
         >
           <p

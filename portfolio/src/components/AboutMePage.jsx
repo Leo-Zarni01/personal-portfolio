@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import profile from '../assets/images/leo_avatar.png';
 import { useIsVisible } from '../hooks/useIsVisible';
-import CurvedText from './CurvedText';
 import ReactCurvedText from 'react-curved-text';
 
 const AboutMePage = () => {
