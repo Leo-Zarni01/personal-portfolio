@@ -19,15 +19,15 @@ const AboutMePage = () => {
           <ReactCurvedText
             width="400"
             height="400"
-            cx="224"
-            cy="224"
-            rx="224"
-            ry="224"
-            startOffset="10"
+            cx="192"
+            cy="192"
+            rx="192"
+            ry="192"
+            startOffset="90"
             reversed={true}
             text="About me"
-            textProps={{ style: { fontSize: '26' } }}
-            textPathProps={{ fill: '#854c4c' }}
+            textProps={{ style: { fontSize: '32' } }}
+            textPathProps={{ fill: '#999' }}
             tspanProps={null}
             ellipseProps={null}
             svgProps={{ className: 'rotating-curved-text' }}
@@ -55,6 +55,25 @@ const AboutMePage = () => {
         </p>
       </div>
       <div style={{ position: 'relative', top: -50 }}>
+        <div className="absolute top-0 left-0 animate-spin [animation-duration:_3s]">
+          {/* <CurvedText /> */}
+          <ReactCurvedText
+            width="200"
+            height="200"
+            cx="64"
+            cy="64"
+            rx="64"
+            ry="64"
+            startOffset="100"
+            reversed={true}
+            text="Entertainment"
+            textProps={{ style: { fontSize: '24' } }}
+            textPathProps={{ fill: '#999' }}
+            tspanProps={null}
+            ellipseProps={null}
+            svgProps={{ className: 'rotating-curved-text' }}
+          />
+        </div>
         <h1 className="text-center py-3 text-slightly-desaturated-magenta">
           Entertainment
         </h1>

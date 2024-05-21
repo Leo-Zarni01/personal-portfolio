@@ -7,7 +7,9 @@ import ContactPage from './components/ContactPage';
 import AboutMePage from './components/AboutMePage';
 import video from './assets/videos/cosmos.mp4';
 import video_2 from './assets/videos/cosmos_2.mp4';
+import video_3 from './assets/videos/cosmos_3.mp4';
 import audio from './assets/audio/greetings.mp3';
+import ProjectPage from './components/ProjectPage';
 function App() {
   useEffect(() => {
     window.onload = function () {
@@ -51,6 +53,21 @@ function App() {
           }}
         ></video>
         <AboutMePage></AboutMePage>
+      </div>
+      <div className="bg-yellow-500 h-auto">
+        <video
+          src={video_3}
+          autoPlay
+          loop
+          muted
+          style={{
+            position: 'relative',
+            top: 0,
+            left: 0,
+            objectFit: 'cover',
+          }}
+        ></video>
+        <ProjectPage></ProjectPage>
       </div>
       <div>
         <video
