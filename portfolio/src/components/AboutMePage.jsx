@@ -10,7 +10,7 @@ const AboutMePage = () => {
     <div
       ref={ref1}
       className="flex flex-row justify-center items-center gap-10 h-0"
-      style={{ position: 'relative', top: -600 }}
+      style={{ position: 'relative', top: '-30rem' }}
     >
       <div className="relative flex flex-col justify-center items-center">
         <div className="absolute top-0 left-0 animate-spin [animation-duration:_3s]">
@@ -37,10 +37,9 @@ const AboutMePage = () => {
           About Me
         </h1> */}
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-96`}
+            } rounded-full size-96`}
           style={{ position: 'relative' }}
           src={profile}
           alt="profile"
@@ -54,7 +53,7 @@ const AboutMePage = () => {
         </p>
       </div>
       <div style={{ position: 'relative', top: -50 }}>
-        <div className="absolute top-0 left-0 animate-spin [animation-duration:_3s]">
+        <div className="absolute top-[-5rem] left-0 animate-spin [animation-duration:_3s]">
           {/* <CurvedText /> */}
           <ReactCurvedText
             width="200"
@@ -63,7 +62,7 @@ const AboutMePage = () => {
             cy="64"
             rx="64"
             ry="64"
-            startOffset="100"
+            startOffset="170"
             reversed={true}
             text="Entertainment"
             textProps={{ style: { fontSize: '24' } }}
@@ -73,14 +72,10 @@ const AboutMePage = () => {
             svgProps={{ className: 'rotating-curved-text' }}
           />
         </div>
-        <h1 className="text-center py-3 text-slightly-desaturated-magenta">
-          Entertainment
-        </h1>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-32`}
+            } rounded-full size-32`}
           src={profile}
           alt="profile"
         />
@@ -90,10 +85,9 @@ const AboutMePage = () => {
           Hobbies
         </h1>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-32`}
+            } rounded-full size-32`}
           src={profile}
           alt="profile"
         />
@@ -103,10 +97,9 @@ const AboutMePage = () => {
           Technical skills
         </h1>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-32`}
+            } rounded-full size-32`}
           src={profile}
           alt="profile"
         />

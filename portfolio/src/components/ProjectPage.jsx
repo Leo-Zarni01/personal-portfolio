@@ -9,16 +9,15 @@ const ProjectPage = (props) => {
   return (
     <section ref={ref1} id="projects" className="text-xl h-[0rem] bg-red-500">
       <div className="projects-container">
-        {/* flex flex-col justify-center items-center pt-5 */}
+        {/* flex flex-col justify-center items-center pt-5  1080*/}
         <div
           className="heading flex flex-col justify-center items-center pt-5 text-white"
-          style={{ position: 'relative', top: -1080 }}
+          style={{ position: 'relative', top: '-50rem' }}
         >
           <h3
-            className={`${
-              isVisible1 &&
+            className={`${isVisible1 &&
               'animate__animated animate__zoomIn animate__delay-1s'
-            } title text-center text-4xl`}
+              } title text-center text-4xl`}
           >
             My Works
           </h3>
@@ -33,7 +32,7 @@ const ProjectPage = (props) => {
         </div>
         <div
           className={`${isVisible1} && projects-wrapper`}
-          style={{ position: 'relative', top: -1070 }}
+          style={{ position: 'relative', top: '-58rem' }}
         >
           <Project
             title="MyFridge"

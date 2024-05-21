@@ -26,13 +26,14 @@ const Project = (props) => {
       }}
     >
       <a
-        className="project-link size-72 animate__animated animate__fadeInLeft animate__delay-1s"
+        className="project-link size-48 animate__animated animate__fadeInLeft animate__delay-1s"
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         style={{
           position: 'relative',
-          left: 150,
+          left: '10rem',
+          top: '7rem',
           display: 'block',
           margin: 'auto 0',
           color: '#252934',
@@ -57,7 +58,7 @@ const Project = (props) => {
       </a>
       <div
         className="project-details animate__animated animate__fadeInUp animate__delay-2s"
-        style={{ margin: 'auto', position: 'relative', left: -100, top: -50 }}
+        style={{ margin: 'auto', position: 'relative', left: -100, top: '5rem' }}
       >
         <div
           className="project-tile"
