@@ -1,5 +1,8 @@
 import { useRef, useState } from 'react';
 import profile from '../assets/images/leo_avatar.png';
+import gojo from '../assets/images/gojo.gif';
+import luffy from '../assets/images/luffy.gif';
+import omen from '../assets/images/omen-valorant.gif';
 import { useIsVisible } from '../hooks/useIsVisible';
 import ReactCurvedText from 'react-curved-text';
 
@@ -9,7 +12,7 @@ const AboutMePage = () => {
   return (
     <div
       ref={ref1}
-      className="flex flex-row justify-center items-center gap-10 h-0"
+      className="flex flex-row justify-center items-center gap-16 h-0"
       style={{ position: 'relative', top: '-30rem' }}
     >
       <div className="relative flex flex-col justify-center items-center">
@@ -37,70 +40,54 @@ const AboutMePage = () => {
           About Me
         </h1> */}
         <img
-          className={`${isVisible1 &&
+          className={`${
+            isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-            } rounded-full size-96`}
+          } rounded-full size-96`}
           style={{ position: 'relative' }}
           src={profile}
           alt="profile"
         />
-        <p className="text-center py-8 text-white font-montserrat w-96">
-          Hello, I'm Leo and I am a third year Computer Science student here at
+        <p
+          className={`${
+            isVisible1 &&
+            'animate__animated animate__fadeInUp animate__delay-2s'
+          } text-center py-8 text-white font-montserrat w-96`}
+        >
+          Hello!! I'm Leo and I am a third year Computer Science student here at
           UNSW. I'm in my final year of studies, so I am focusing on connecting
           with new people, and learning the latest technology to keep myself
           updated. In my spare time, I like to listen to music, play some
           sports, or play video games.
         </p>
       </div>
-      <div style={{ position: 'relative', top: -50 }}>
-        <div className="absolute top-[-5rem] left-0 animate-spin [animation-duration:_3s]">
-          {/* <CurvedText /> */}
-          <ReactCurvedText
-            width="200"
-            height="200"
-            cx="64"
-            cy="64"
-            rx="64"
-            ry="64"
-            startOffset="170"
-            reversed={true}
-            text="Entertainment"
-            textProps={{ style: { fontSize: '24' } }}
-            textPathProps={{ fill: '#999' }}
-            tspanProps={null}
-            ellipseProps={null}
-            svgProps={{ className: 'rotating-curved-text' }}
-          />
-        </div>
+      <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${isVisible1 &&
+          className={`${
+            isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-            } rounded-full size-32`}
-          src={profile}
+          } rounded-full size-48`}
+          src={luffy}
           alt="profile"
         />
       </div>
-      <div style={{ position: 'relative', top: -50 }}>
-        <h1 className="text-center py-3 text-slightly-desaturated-magenta">
-          Hobbies
-        </h1>
+      <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${isVisible1 &&
+          className={`${
+            isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-            } rounded-full size-32`}
-          src={profile}
+          } rounded-full size-48`}
+          src={omen}
           alt="profile"
         />
       </div>
-      <div style={{ position: 'relative', top: -50 }}>
-        <h1 className="text-center py-3 text-slightly-desaturated-magenta">
-          Technical skills
-        </h1>
+      <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${isVisible1 &&
+          className={`${
+            isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-            } rounded-full size-32`}
-          src={profile}
+          } rounded-full size-48`}
+          src={gojo}
           alt="profile"
         />
       </div>

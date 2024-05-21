@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import Project from './Project';
 import { useIsVisible } from '../hooks/useIsVisible';
 import nerdStation from '../assets/images/nerd-station.JPG';
+import myFridge from '../assets/images/my-fridge.jpeg';
 
 const ProjectPage = (props) => {
   const ref1 = useRef(null);
@@ -15,9 +16,10 @@ const ProjectPage = (props) => {
           style={{ position: 'relative', top: '-50rem' }}
         >
           <h3
-            className={`${isVisible1 &&
+            className={`${
+              isVisible1 &&
               'animate__animated animate__zoomIn animate__delay-1s'
-              } title text-center text-4xl`}
+            } title text-center text-4xl`}
           >
             My Works
           </h3>
@@ -36,13 +38,14 @@ const ProjectPage = (props) => {
         >
           <Project
             title="MyFridge"
-            img={nerdStation}
-            tech="js sass"
-            link="https://codepen.io/yagoestevez/full/pOBLeK/"
-            repo="https://github.com/yagoestevez/tomate-timer-landing-page"
+            img={myFridge}
+            tech="js react"
+            link="https://github.com/edbert-fl/my_fridge"
+            repo="https://github.com/edbert-fl/my_fridge"
           >
             <small style={{ fontStyle: 'italic' }}>
-              Built using vanilla Javascript and Scss.
+              Built using React Native, Node.js, JavaScript, Microsoft Azure
+              Vision Read API, and ChatGPT-3.5 Turbo
             </small>
             <p className="text-white">
               Food management app that scans receipts to offer healthy grocery
@@ -53,11 +56,11 @@ const ProjectPage = (props) => {
             title="Nerd Station"
             img={nerdStation}
             tech="js react css"
-            link="https://codepen.io/yagoestevez/full/QxOLKX/"
-            repo="https://github.com/yagoestevez/documentify"
+            link="https://gdsc-hackathon-2023.web.app/"
+            repo="https://github.com/MerryRosalie/gdsc-hackathon-2023"
           >
             <small style={{ fontStyle: 'italic' }}>
-              Built using React and CSS.
+              Built using React, TypeScript, and CSS
             </small>
             <p className="text-white">
               Nerd Station 🤓 is a web app that we thoughtfully designed to help

@@ -47,7 +47,7 @@ const LandingPage = () => {
               'animate__animated animate__fadeInUp animate__delay-3s'
             } text-white text-base font-montserrat`}
           >
-            Computer Science Student (Third Year)
+            Welcome to my page!!
           </p>
         </div>
       </div>
