@@ -17,9 +17,8 @@ const AboutMePage = () => {
     >
       <div className="relative flex flex-col justify-center items-center">
         <div
-          className={`${
-            isVisible1 && 'animate-spin [animation-duration:_3s]'
-          } absolute top-0 left-0`}
+          className={`${isVisible1 && 'animate-spin [animation-duration:_3s]'
+            } absolute top-0 left-0`}
         >
           {/* <CurvedText /> */}
           <ReactCurvedText
@@ -44,53 +43,48 @@ const AboutMePage = () => {
           About Me
         </h1> */}
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-96`}
+            } rounded-full size-96`}
           style={{ position: 'relative' }}
           src={profile}
           alt="profile"
         />
         <p
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInUp animate__delay-2s'
-          } text-center py-8 text-white font-montserrat w-96`}
+            } text-center py-8 text-white font-montserrat w-96`}
         >
           Hello!! I'm Leo and I am a third year Computer Science student here at
           UNSW. I'm in my final year of studies, so I am focusing on connecting
           with new people, and learning the latest technology to keep myself
           updated. In my spare time, I like to listen to music, play some
-          sports, or play video games.
+          sports, or watch some anime.
         </p>
       </div>
       <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-48`}
+            } rounded-full size-48`}
           src={luffy}
           alt="profile"
         />
       </div>
       <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-48`}
+            } rounded-full size-48`}
           src={omen}
           alt="profile"
         />
       </div>
       <div style={{ position: 'relative', top: -100 }}>
         <img
-          className={`${
-            isVisible1 &&
+          className={`${isVisible1 &&
             'animate__animated animate__fadeInRight animate__delay-1s'
-          } rounded-full size-48`}
+            } rounded-full size-48`}
           src={gojo}
           alt="profile"
         />
