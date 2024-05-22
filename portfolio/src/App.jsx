@@ -33,12 +33,6 @@ function App() {
           objectFit: 'cover',
         }}
       ></video>
-      {/* <audio id="audio" loop autoplay="true">
-        <source src={audio} type="audio/mpeg" />
-      </audio> */}
-      <audio id="audio" autoplay="true">
-        <source src={audio} type="audio/mpeg" />
-      </audio>
       <LandingPage></LandingPage>
       <div>
         <video
