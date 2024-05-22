@@ -8,6 +8,7 @@ import AboutMePage from './components/AboutMePage';
 import video from './assets/videos/cosmos.mp4';
 import video_2 from './assets/videos/cosmos_2.mp4';
 import video_3 from './assets/videos/cosmos_3.mp4';
+import video_4 from './assets/videos/cosmos_4.mp4';
 import audio from './assets/audio/greetings.mp3';
 import ProjectPage from './components/ProjectPage';
 function App() {
@@ -71,7 +72,7 @@ function App() {
       </div>
       <div>
         <video
-          src={video_2}
+          src={video_4}
           autoPlay
           loop
           muted
