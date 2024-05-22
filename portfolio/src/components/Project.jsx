@@ -98,6 +98,9 @@ const Project = (props) => {
         {props.children}
         <div className="buttons relative top-3 flex flex-row justify-between">
           <a
+            className="
+          hover:bg-[#02edf6] hover:text-[#333] transition duration-300 ease-in delay-[150ms] hover:shadow-custom w-full
+          "
             href={repo}
             target="_blank"
             rel="noopener noreferrer"
@@ -105,94 +108,36 @@ const Project = (props) => {
               width: '49%',
               padding: '0.5rem',
               border: 'none',
-              boxShadow: 'inset 0 0 0 200px rgba(255,255,255,0.05)',
               borderBottom: '1px solid #f300b4',
               color: '#f9f9f9',
               fontSize: '1.2rem',
               textAlign: 'center',
             }}
           >
-            <button>
+            <button className="hover:text-[#333] transition duration-300 ease-in delay-[150ms] hover:shadow-custom w-full">
               View Source
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
             </button>
             {/* View source <i className="fas fa-external-link-alt" /> */}
           </a>
           <a
+            className="
+          hover:bg-[#02edf6] hover:text-[#333] transition duration-300 ease-in delay-[150ms] hover:shadow-custom w-full
+          "
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-black"
             style={{
               width: '49%',
               padding: '0.5rem',
               border: 'none',
-              boxShadow: 'inset 0 0 0 200px rgba(255,255,255,0.05)',
               borderBottom: '1px solid #f300b4',
               color: '#f9f9f9',
               fontSize: '1.2rem',
               textAlign: 'center',
             }}
           >
-            <button
-              className="bg-[#02edf6] text-[#333] transition duration-300 ease-in delay-[640ms]"
-              style={{
-                boxShadow:
-                  '0px 0px 8px #02edf6, 0px 0px 16px #02edf6, 0px 0px 75px #02edf6',
-              }}
-            >
+            <button className="hover:text-[#333] transition duration-300 ease-in delay-[150ms] hover:shadow-custom w-full">
               Try it live
-              <span
-                className="hover:left-0"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: '50%',
-                  width: '50%',
-                  height: '2px',
-                  backgroundImage:
-                    'linear-gradient(90deg, transparent, #02edf6)',
-                  transition: '0.2s ease',
-                }}
-              ></span>
-              <span
-                style={{
-                  position: 'absolute',
-                  top: '-12%',
-                  right: 0,
-                  width: '2px',
-                  height: '110%',
-                  backgroundImage: 'linear-gradient(transparent, #02edf6)',
-                  transition: '0.2s ease 0.2s',
-                }}
-              ></span>
-              <span
-                style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  right: '-5%',
-                  width: '54%',
-                  height: '2px',
-                  backgroundImage:
-                    'linear-gradient(-90deg, transparent, #02edf6)',
-                  transition: '0.2s ease 0.4s',
-                }}
-              ></span>
-              <span
-                style={{
-                  position: 'absolute',
-                  bottom: '-10%',
-                  right: '49%',
-                  width: '2px',
-                  height: '110%',
-                  backgroundImage:
-                    'linear-gradient(360deg, transparent, #02edf6)',
-                  transition: '0.2s ease 0.6s',
-                }}
-              ></span>
             </button>
             {/* Try it Live <i className="fas fa-external-link-alt" /> */}
           </a>
