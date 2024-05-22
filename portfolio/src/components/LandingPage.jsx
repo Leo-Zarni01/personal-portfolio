@@ -35,7 +35,7 @@ const LandingPage = () => {
             class={`${
               isVisible1 &&
               'animate__animated animate__fadeInUp animate__delay-2s'
-            } text-slightly-desaturated-magenta text-3xl py-3 uppercase font-montserrat`}
+            } text-[#84CEEB] text-3xl py-3 uppercase font-montserrat`}
           >
             Leo Zarni
           </h1>

@@ -1,3 +1,6 @@
+import { useRef } from 'react';
+import { useIsVisible } from '../hooks/useIsVisible';
+
 const Project = (props) => {
   const tech = {
     sass: 'fab fa-sass',
@@ -11,9 +14,11 @@ const Project = (props) => {
 
   const link = props.link || 'http://';
   const repo = props.repo || 'http://';
-
+  const ref1 = useRef(null);
+  const isVisible1 = useIsVisible(ref1);
   return (
     <div
+      ref={ref1}
       className="project"
       style={{
         margin: '1rem auto',
@@ -26,7 +31,10 @@ const Project = (props) => {
       }}
     >
       <a
-        className="project-link size-48 animate__animated animate__fadeInLeft animate__delay-1s"
+        className={`project-link size-48 ${
+          isVisible1 &&
+          'animate__animated animate__fadeInLeft animate__delay-1s'
+        }`}
         href={link}
         target="_blank"
         rel="noopener noreferrer"
@@ -46,9 +54,8 @@ const Project = (props) => {
         }}
       >
         <img
-          className="project-image size-[18rem]"
+          className="project-image size-[13rem] hover:scale-125"
           style={{
-            transform: 'scale(1.0)',
             filter: 'saturate(1)',
             transition: 'all 300ms',
           }}
@@ -57,7 +64,9 @@ const Project = (props) => {
         />
       </a>
       <div
-        className="project-details animate__animated animate__fadeInUp animate__delay-2s"
+        className={`project-details ${
+          isVisible1 && 'animate__animated animate__fadeInUp animate__delay-2s'
+        }`}
         style={{
           margin: 'auto',
           position: 'relative',
@@ -66,7 +75,7 @@ const Project = (props) => {
         }}
       >
         <div
-          className="project-tile"
+          className="project-tile font-dosis"
           style={{
             fontSize: '2rem',
             fontWeight: 'bold',

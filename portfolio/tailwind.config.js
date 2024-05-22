@@ -14,7 +14,8 @@ module.exports = {
         mantinia: ['"Mantinia Regular"', 'regular'],
         montserrat: [
           "Montserrat", "sans-serif"
-        ]
+        ],
+        dosis: ['"Dosis Regular"', "sans-serif"]
       },
       boxShadow: {
         custom: '0px 0px 8px #02edf6, 0px 0px 16px #02edf6, 0px 0px 75px #02edf6',

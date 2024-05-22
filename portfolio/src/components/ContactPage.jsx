@@ -37,7 +37,7 @@ const ContactPage = () => {
         </div>
         <div>
           <div className="flex flex-row gap-4">
-            <div className="hover:scale-125">
+            <div className="hover:scale-125 hover:transition-all duration-300">
               <a target="_blank" href="https://www.instagram.com/leozarni/">
                 <img
                   className={`${
@@ -49,7 +49,7 @@ const ContactPage = () => {
                 />
               </a>
             </div>
-            <div className="hover:scale-125">
+            <div className="hover:scale-125 hover:transition-all duration-300">
               <a target="_blank" href="https://www.linkedin.com/in/khant-zarni">
                 <img
                   className={`${
@@ -61,7 +61,7 @@ const ContactPage = () => {
                 />
               </a>
             </div>
-            <div className="hover:scale-125">
+            <div className="hover:scale-125 hover:transition-all duration-300">
               <a href="https://www.github.com/Leo-Zarni01">
                 <img
                   className={`${
