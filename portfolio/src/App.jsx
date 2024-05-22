@@ -18,7 +18,7 @@ function App() {
     };
   }, []);
   return (
-    <body className="min-h-screen">
+    <div className="min-h-screen">
       <video
         src={video}
         autoPlay
@@ -85,7 +85,7 @@ function App() {
         ></video>
         <ContactPage></ContactPage>
       </div>
-    </body>
+    </div>
   );
 }
 
