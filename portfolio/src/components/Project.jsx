@@ -48,8 +48,8 @@ const Project = (props) => {
         <img
           className="project-image size-[18rem]"
           style={{
-            transform: 'scale(1.2)',
-            filter: 'saturate(0)',
+            transform: 'scale(1.0)',
+            filter: 'saturate(1)',
             transition: 'all 300ms',
           }}
           src={props.img}
@@ -58,7 +58,12 @@ const Project = (props) => {
       </a>
       <div
         className="project-details animate__animated animate__fadeInUp animate__delay-2s"
-        style={{ margin: 'auto', position: 'relative', left: -100, top: '5rem' }}
+        style={{
+          margin: 'auto',
+          position: 'relative',
+          left: -100,
+          top: '5rem',
+        }}
       >
         <div
           className="project-tile"
@@ -91,12 +96,105 @@ const Project = (props) => {
           {props.title}{' '}
         </div>
         {props.children}
-        <div className="buttons">
-          <a href={repo} target="_blank" rel="noopener noreferrer">
-            View source <i className="fas fa-external-link-alt" />
+        <div className="buttons relative top-3 flex flex-row justify-between">
+          <a
+            href={repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              width: '49%',
+              padding: '0.5rem',
+              border: 'none',
+              boxShadow: 'inset 0 0 0 200px rgba(255,255,255,0.05)',
+              borderBottom: '1px solid #f300b4',
+              color: '#f9f9f9',
+              fontSize: '1.2rem',
+              textAlign: 'center',
+            }}
+          >
+            <button>
+              View Source
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            {/* View source <i className="fas fa-external-link-alt" /> */}
           </a>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            Try it Live <i className="fas fa-external-link-alt" />
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-black"
+            style={{
+              width: '49%',
+              padding: '0.5rem',
+              border: 'none',
+              boxShadow: 'inset 0 0 0 200px rgba(255,255,255,0.05)',
+              borderBottom: '1px solid #f300b4',
+              color: '#f9f9f9',
+              fontSize: '1.2rem',
+              textAlign: 'center',
+            }}
+          >
+            <button
+              className="bg-[#02edf6] text-[#333] transition duration-300 ease-in delay-[640ms]"
+              style={{
+                boxShadow:
+                  '0px 0px 8px #02edf6, 0px 0px 16px #02edf6, 0px 0px 75px #02edf6',
+              }}
+            >
+              Try it live
+              <span
+                className="hover:left-0"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: '50%',
+                  width: '50%',
+                  height: '2px',
+                  backgroundImage:
+                    'linear-gradient(90deg, transparent, #02edf6)',
+                  transition: '0.2s ease',
+                }}
+              ></span>
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '-12%',
+                  right: 0,
+                  width: '2px',
+                  height: '110%',
+                  backgroundImage: 'linear-gradient(transparent, #02edf6)',
+                  transition: '0.2s ease 0.2s',
+                }}
+              ></span>
+              <span
+                style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: '-5%',
+                  width: '54%',
+                  height: '2px',
+                  backgroundImage:
+                    'linear-gradient(-90deg, transparent, #02edf6)',
+                  transition: '0.2s ease 0.4s',
+                }}
+              ></span>
+              <span
+                style={{
+                  position: 'absolute',
+                  bottom: '-10%',
+                  right: '49%',
+                  width: '2px',
+                  height: '110%',
+                  backgroundImage:
+                    'linear-gradient(360deg, transparent, #02edf6)',
+                  transition: '0.2s ease 0.6s',
+                }}
+              ></span>
+            </button>
+            {/* Try it Live <i className="fas fa-external-link-alt" /> */}
           </a>
         </div>
       </div>

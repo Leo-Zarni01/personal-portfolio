@@ -16,7 +16,11 @@ const AboutMePage = () => {
       style={{ position: 'relative', top: '-30rem' }}
     >
       <div className="relative flex flex-col justify-center items-center">
-        <div className="absolute top-0 left-0 animate-spin [animation-duration:_3s]">
+        <div
+          className={`${
+            isVisible1 && 'animate-spin [animation-duration:_3s]'
+          } absolute top-0 left-0`}
+        >
           {/* <CurvedText /> */}
           <ReactCurvedText
             width="400"
